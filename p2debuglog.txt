@@ -1,1 +1,12 @@
-
+gcc -g p2final.c
+./a.out
+enter num,den 
+2
+4
+enter num,den 
+6
+9
+enter num,den 
+36
+6
+the largest fraction among 2/4 , 6/9 and 36/6 is 36/6
