@@ -1,29 +1,25 @@
-#include<stdio.h>
-#include<math.h>
-void input(float *x1,float *y1,float *x2,float *y2)
+#include <stdio.h>
+
+void input(int *a,int *b,int *c,int *d)
 {
-  printf("enter the value of x1 and y1:\n");
-  scanf("%f %f",x1,y1);
-  printf("enter the value of x2 and y2:\n");
-  scanf("%f %f",x2,y2);
-  
+  printf("enter two fractions:");
+  scanf("%d%d%d%d",a,b,c,d);
 }
-void find_distance(float x1,float y1,float x2,float y2,float *dist)
+void add(int a,int b,int c,int d,int *x,int *y)
 {
-  *dist=sqrt(pow((x2-x1),2)+pow((y2-y1),2));
-
-
+*x=(a*d)+(b*c);
+*y=b*d;
 }
 
-void output(float x1, float y1,float x2, float y2, float dist)
+void output(int a,int b,int c,int d,int x,int y)
 {
-  printf("the distance between two points is %f",dist);
-
+  printf("the sum of two fractions is %d/%d",x,y);
 }
 int main()
 {
-  float x1,y1,x2,y2,dist;
-  input(&x1,&y1,&x2,&y2);
-  find_distance(x1,y1,x2,y2,&dist);
-  output(x1,y1,x2,y2,dist);
+  int a,b,c,d,x,y;
+  input (&a,&b,&c,&d);
+  add (a,b,c,d,&x,&y);
+  output (a,b,c,d,x,y);
+  return 0;
 }
