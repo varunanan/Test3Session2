@@ -1,1 +1,6 @@
-
+gcc -g p1final.c
+./a.out
+enter two fractions:1
+4
+1 2
+the sum of two fractions is 6/8
