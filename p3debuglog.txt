@@ -1,1 +1,6 @@
-
+gcc -g p3final.c
+./a.out
+enter n and r value 
+7
+4
+the ncr value for n= 7 , r= 4 is 35
